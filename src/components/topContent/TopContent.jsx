@@ -8,7 +8,7 @@ export const TopContent = () => {
             <Topbar/>
             <div className={"top-text"}>
                 <p className={'text'}>
-                    Видовой ресторан RedRin Food
+                    Видовой ресторан ReRin Food
                     <br/>
                     в Центре Кишинева
                 </p>
