@@ -1,0 +1,66 @@
+@import "variables/css-variables.scss";
+/* Сброс всех отступов и полей для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Рекомендуется использовать border-box для бокс-модели */
+}
+
+/* Сброс стилей списка */
+ul, ol {
+  list-style: none;
+}
+
+/* Сброс стилей для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//Возможность оставить скроллбар, если понравится
+::-webkit-scrollbar{
+  width:0.3em;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #333333;
+}
+
+
+//::-webkit-scrollbar{
+//  width: 0;
+//}
+body{
+  background-color: #333333;
+}
+/* Сброс стандартных стилей заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.button {
+  cursor: pointer;
+  padding:10px 20px 10px 20px;
+  background-color: $primary-button-color;
+  font-weight: $bold-width;
+  color:$light-text;
+  font-family: $primary-font;
+
+  &:hover{
+    transition: background-color 0.3s ease;
+    background-color: $primary-button-hover-color;
+  }
+}
+.secondary-button {
+  cursor: pointer;
+  padding:10px 20px 10px 20px;
+  border: 1px solid rgba(51, 51, 51, 0.20);
+  background-color: $secondary-button-color;
+  font-weight: $bold-width;
+  color:$dark-text;
+  font-family: $primary-font;
+  &:hover{
+    transition: background-color 0.3s ease;
+    background-color: $secondary-button-color-hover;
+  }
+}
+/* Остальные сбросы и нормализации по вашему выбору */

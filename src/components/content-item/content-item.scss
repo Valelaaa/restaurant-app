@@ -1,0 +1,79 @@
+@import '../../variables/css-variables.scss';
+
+.content-item {
+  margin-top: 150px;
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    .title-text {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      font-style: normal;
+      line-height: 140%;
+      color: #333333;
+    }
+
+    .line {
+      margin-left: 30px;
+      max-width: 60px;
+      border-radius: 5%;
+      flex-grow: 1;
+      height: 3px;
+      background-color: $primary-button-color;
+    }
+  }
+
+  .container {
+    display: flex;
+
+    .base {
+      display: flex;
+      flex-direction: column;
+
+      .horizontal {
+        display: flex;
+        .big-text {
+          display: block;
+          width: 330px;
+          word-spacing: 100px;
+
+          margin-top: 80px;
+          margin-left: 7vw;
+          font-size: 64px;
+          white-space: pre-line;
+
+          &::before {
+            content: "\A"; /* Экранированный символ новой строки */
+            display: inline-block; /* Отображаем псевдоэлемент как блочный элемент */
+          }
+
+        }
+
+        .description {
+          margin-top: 87px;
+          font-size: 18px;
+          width: 40vw;
+          font-weight: 400;
+          text-align: justify;
+        }
+      }
+      .content-container {
+        //display: flex;
+        .line {
+          margin-left: 30px;
+          max-width: 60px;
+          border-radius: 5%;
+          flex-grow: 1;
+          height: 3px;
+          background-color: $primary-button-color;
+        }
+      }
+    }
+
+  }
+
+}
+

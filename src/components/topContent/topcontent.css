@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.content {
+  position: relative;
+  background-image: url("../../../public/images/main-background.png");
+  background-size: cover;
+  height: 100%;
+  width: calc(100vw - 120px);
+}
+.content .top-text {
+  position: absolute;
+  bottom: 0;
+  margin-left: 15vw;
+  margin-bottom: 150px;
+}
+.content .top-text .text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный цвет */
+}
+
+/*# sourceMappingURL=topcontent.css.map */

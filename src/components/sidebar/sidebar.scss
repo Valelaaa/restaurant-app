@@ -1,0 +1,64 @@
+@import "../../variables/css-variables.scss";
+
+.sidebar {
+  margin: 0 0 0 0;
+  width: 120px;
+  height: 100vh;
+  flex-shrink: 0;
+  background-color: $secondary-background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  .upper-side {
+
+    .logo {
+
+      padding: 30px 20px 0px 20px;
+
+      .logo-img {
+
+        width: 80px;
+        height: 46px;
+      }
+    }
+
+    .menu-left {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .vector {
+
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .bottom-side{
+
+    .social-media{
+      padding: 0px 40px 30px 40px;
+
+      .media{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        .media-item {
+          .soc-logo {
+            width: 40px;
+            height: 40px;
+          }
+          &:not(:first-child){
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+

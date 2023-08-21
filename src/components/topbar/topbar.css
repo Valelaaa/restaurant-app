@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.top-bar {
+  position: absolute;
+  right: 0px;
+  margin: 30px 120px 0px 0px;
+  font-size: 16px;
+  color: #fff;
+}
+.top-bar .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .list .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar .list .menu .menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.top-bar .list .menu .menu-item .item-text {
+  margin-right: 25px;
+  margin-left: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.top-bar .list .menu .menu-item:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+/*# sourceMappingURL=topbar.css.map */
