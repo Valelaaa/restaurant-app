@@ -1,0 +1,217 @@
+@import "../../variables/css-variables.scss";
+
+.contacts {
+  padding-right: 0 !important;
+  font-family: $primary-font;
+
+  .delivery-container {
+    display: flex;
+
+    .part {
+      flex: 1;
+
+      &:first-child {
+        flex-basis: 25%;
+      }
+
+      &:last-child {
+        flex-basis: 75%;
+      }
+    }
+
+    .delivery-time {
+      margin-top: 7vw;
+
+      .time-grid {
+        height: 15vw;
+        width: 20vw;
+        display: flex;
+
+        .row {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+
+          .time-info {
+            flex: 1;
+            color: $dark-text;
+
+            .time {
+              display: flex;
+              color: $primary-button-hover-color;
+              align-items: end;
+
+              h2 {
+                margin-right: 15px;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; /* 76.8px */
+              }
+
+              .minutes {
+                height: 100%;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+                margin-bottom: 10px;
+              }
+
+              @media (min-width: $layout-breakpoint-medium) and (max-width: $layout-breakpoint-large) {
+                h2 {
+                  margin-right: 15px;
+                  font-size: 56px;
+                }
+
+                .minutes {
+                  height: 100%;
+                  font-size: 28px;
+                  margin-bottom: 8px;
+                }
+              }
+            }
+
+            .region {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%;
+              letter-spacing: 0.8px;
+
+              @media (min-width: $layout-breakpoint-medium) and (max-width: $layout-breakpoint-large) {
+                font-size: 15px;
+              }
+            }
+          }
+
+          &:last-child {
+            margin-left: 40px;
+          }
+
+          @media (min-width: $layout-breakpoint-medium) and (max-width: $layout-breakpoint-large) {
+            &:last-child {
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .map-and-info {
+      //width: 100%;
+      //height: 100%;
+      display: flex;
+
+      .info {
+        position: absolute;
+        margin-top: 6vw;
+        width: 21vw;
+        height: 18vw;
+        margin-left: 5vw;
+        background-color: #5B5B5B;
+        z-index: 4;
+
+        .info-item {
+          display: flex;
+          margin-left: 2vw;
+          color: $light-text;
+          margin-top: 20px;
+
+          .info-text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin-left: 15px;
+            @media (min-width: $layout-breakpoint-large) and (max-width: 1700px) {
+              font-size: 14px;
+            }
+            @media (min-width: $layout-breakpoint-medium) and (max-width: $layout-breakpoint-large) {
+              font-size: 13px;
+            }
+          }
+
+          &:first-child {
+            margin-top: 2vw;
+          }
+
+        }
+
+        .working-time {
+          margin-left: 2vw;
+          margin-top: 25px;
+          color:$light-text;
+
+          p {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 28px */
+          }
+
+          .weekdays {
+            margin-top:15px;
+
+            .weekday{
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 140%;
+            }
+            .worktime{
+              margin-left: 15px;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%
+            }
+          }
+
+        }
+        .info-buttons{
+          margin-top:30px;
+          display: flex;
+          .button{
+            display: inline-flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-left: 40px;
+          }
+          .faq{
+            display: inline-flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: inherit;
+            border: 1px white solid;
+            margin-left:20px;
+            &:hover{
+              transition: background-color 0.3s ease;
+              background-color: $secondary-button-color-hover;
+            }
+          }
+        }
+      }
+
+      .map-container {
+        z-index: 0;
+        margin-left: 10vw;
+        margin-top: 3vw;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+        height: 450px;
+        width: 45vw;
+
+        .map {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

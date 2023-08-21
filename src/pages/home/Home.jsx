@@ -3,7 +3,7 @@ import './home.scss'
 import {TopContent} from "../../components/topContent/TopContent.jsx";
 import {SideBar} from "../../components/sidebar/Sidebar.jsx";
 import {BasicContent} from "../../components/basic-content/BasicContent.jsx"
-
+import {Footer} from "../../components/footer/Footer.jsx"
 export const Home = () => {
 
     return (
@@ -13,6 +13,7 @@ export const Home = () => {
                     <TopContent/>
                 </div>
                 <BasicContent/>
+            <Footer/>
         </div>
     )
 }
