@@ -1,3 +1,191 @@
-
+.contacts {
+  padding-right: 0 !important;
+  font-family: "Roboto", sans-serif;
+}
+.contacts .delivery-container {
+  display: flex;
+}
+.contacts .delivery-container .part {
+  flex: 1;
+}
+.contacts .delivery-container .part:first-child {
+  flex-basis: 25%;
+}
+.contacts .delivery-container .part:last-child {
+  flex-basis: 75%;
+}
+.contacts .delivery-container .delivery-time {
+  margin-top: 7vw;
+}
+.contacts .delivery-container .delivery-time .time-grid {
+  height: 15vw;
+  width: 20vw;
+  display: flex;
+}
+.contacts .delivery-container .delivery-time .time-grid .row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.contacts .delivery-container .delivery-time .time-grid .row .time-info {
+  flex: 1;
+  color: #333;
+}
+.contacts .delivery-container .delivery-time .time-grid .row .time-info .time {
+  display: flex;
+  color: #B59571;
+  align-items: end;
+}
+.contacts .delivery-container .delivery-time .time-grid .row .time-info .time h2 {
+  margin-right: 15px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+}
+.contacts .delivery-container .delivery-time .time-grid .row .time-info .time .minutes {
+  height: 100%;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+@media (min-width: 1280px) and (max-width: 1450px) {
+  .contacts .delivery-container .delivery-time .time-grid .row .time-info .time h2 {
+    margin-right: 15px;
+    font-size: 56px;
+  }
+  .contacts .delivery-container .delivery-time .time-grid .row .time-info .time .minutes {
+    height: 100%;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+}
+.contacts .delivery-container .delivery-time .time-grid .row .time-info .region {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+}
+@media (min-width: 1280px) and (max-width: 1450px) {
+  .contacts .delivery-container .delivery-time .time-grid .row .time-info .region {
+    font-size: 15px;
+  }
+}
+.contacts .delivery-container .delivery-time .time-grid .row:last-child {
+  margin-left: 40px;
+}
+@media (min-width: 1280px) and (max-width: 1450px) {
+  .contacts .delivery-container .delivery-time .time-grid .row:last-child {
+    margin-left: 30px;
+  }
+}
+.contacts .delivery-container .map-and-info {
+  display: flex;
+}
+.contacts .delivery-container .map-and-info .info {
+  position: absolute;
+  margin-top: 6vw;
+  width: 21vw;
+  height: 18vw;
+  margin-left: 5vw;
+  background-color: #5B5B5B;
+  z-index: 4;
+}
+.contacts .delivery-container .map-and-info .info .info-item {
+  display: flex;
+  margin-left: 2vw;
+  color: #fff;
+  margin-top: 20px;
+}
+.contacts .delivery-container .map-and-info .info .info-item .info-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-left: 15px;
+}
+@media (min-width: 1450px) and (max-width: 1700px) {
+  .contacts .delivery-container .map-and-info .info .info-item .info-text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1450px) {
+  .contacts .delivery-container .map-and-info .info .info-item .info-text {
+    font-size: 13px;
+  }
+}
+.contacts .delivery-container .map-and-info .info .info-item:first-child {
+  margin-top: 2vw;
+}
+.contacts .delivery-container .map-and-info .info .working-time {
+  margin-left: 2vw;
+  margin-top: 25px;
+  color: #fff;
+}
+.contacts .delivery-container .map-and-info .info .working-time p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+}
+.contacts .delivery-container .map-and-info .info .working-time .weekdays {
+  margin-top: 15px;
+}
+.contacts .delivery-container .map-and-info .info .working-time .weekdays .weekday {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+.contacts .delivery-container .map-and-info .info .working-time .weekdays .worktime {
+  margin-left: 15px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.contacts .delivery-container .map-and-info .info .info-buttons {
+  margin-top: 30px;
+  display: flex;
+}
+.contacts .delivery-container .map-and-info .info .info-buttons .button {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+.contacts .delivery-container .map-and-info .info .info-buttons .faq {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: inherit;
+  border: 1px white solid;
+  margin-left: 20px;
+}
+.contacts .delivery-container .map-and-info .info .info-buttons .faq:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.contacts .delivery-container .map-and-info .map-container {
+  z-index: 0;
+  margin-left: 10vw;
+  margin-top: 3vw;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  width: 45vw;
+}
+.contacts .delivery-container .map-and-info .map-container .map {
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=contacts.css.map */

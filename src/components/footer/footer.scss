@@ -1,0 +1,25 @@
+@import "../../variables/css-variables.scss";
+.footer {
+  margin-top:100px;
+  width: 100%;
+  background-color: $secondary-background-color;
+
+  .footer-container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logo-img {
+      width: 80px;
+      height: 46px;
+    }
+    .footer-text{
+      color:$light-text;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+    }
+  }
+}
