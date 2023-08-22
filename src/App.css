@@ -26,6 +26,8 @@ a {
 }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   background-color: #333333;
 }
 
