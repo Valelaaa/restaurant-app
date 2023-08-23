@@ -2,7 +2,7 @@ import './basic-content.scss';
 import {ContentItem} from "../content-item/ContentItem.jsx";
 import {Contacts} from "../contacts/Contacts.jsx";
 
-export const BasicContent = () => {
+export const BasicContent = ({reserveMenu}) => {
     let aboutText = <div className={'description-outer'}><p>Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh.
         In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida
         dignissim leo pulvinar sit volutpat nulla vestibulum.</p><p className={"space-between"}>'Morbi pellentesque enim
@@ -70,7 +70,7 @@ export const BasicContent = () => {
                     </ContentItem>
                 </li>
                 <li className="content-item">
-                    <Contacts/>
+                    <Contacts reserveMenu={reserveMenu}/>
                 </li>
 
             </ul>

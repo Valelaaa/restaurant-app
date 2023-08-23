@@ -13,3 +13,14 @@
 - **Responsive Design:** The application boasts a responsive design, ensuring optimal performance and functionality across various devices.
 
 ReRin Food is a one-stop solution that bridges the gap between restaurant management and customer satisfaction. With its robust feature set and elegant design, it delivers a modern dining experience for both restaurant staff and patrons. Elevate your restaurant's online presence with ReRin Food and redefine the way you connect with your customers.
+
+
+## Screenshots:
+
+**Hamburger menu:**
+
+<div align="center"><img width="960" alt="main" src="projectpics/hamburger_menu.png"></div> 
+
+**Reserve table:**
+<div align="center"><img width="960" alt="main" src="projectpics/reserve-menu.png"></div>
+

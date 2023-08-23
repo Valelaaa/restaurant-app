@@ -21,5 +21,18 @@
       font-weight: 400;
       line-height: 140%; /* 22.4px */
     }
+    .payment-systems {
+      display: flex;
+      .payment{
+        .payment-icon{
+          width: 40px;
+          height: 40px;
+        }
+        &:first-child{
+          margin-right: 30px;
+        }
+      }
+    }
   }
 }
+
