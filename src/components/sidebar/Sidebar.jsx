@@ -6,7 +6,7 @@ import youtube from '../../../public/images/youtube-logo.png'
 import vk from '../../../public/images/vk-logo.png'
 import telegram from '../../../public/images/telegram-logo.png'
 import {OpenMenu} from "../open-menu/OpenMenu.jsx";
-export const SideBar = () => {
+export const SideBar = ({reserveMenu}) => {
     const [menuClass, setMenuClass] = useState("open-menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
@@ -23,7 +23,7 @@ export const SideBar = () => {
 
     return (
         <div className="sidebar-container">
-            <OpenMenu menu_status={menuClass} updateMenu={updateMenu}/>
+            <OpenMenu menu_status={menuClass} updateMenu={updateMenu} reserveMenu={reserveMenu}/>
             <div className={'sidebar'}>
 
                 <div className="upper-side">

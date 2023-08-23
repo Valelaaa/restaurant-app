@@ -6,14 +6,18 @@ import youtube from '../../../public/images/youtube-logo.png';
 import telegram from '../../../public/images/telegram-logo.png';
 import vk from "../../../public/images/vk-logo.png";
 
-export const OpenMenu = ({menu_status,updateMenu}) => {
+export const OpenMenu = ({menu_status,updateMenu,reserveMenu}) => {
+    function updateAndReserve(){
+        updateMenu();
+        reserveMenu();
+    }
     return (
         <div className={menu_status}>
             <div className="open-menu-container">
                 <div className="open-menu-pics">
                     <div className="open-menu-logo">
                         <a href="/home">
-                            <img className={'logo-img'} src={logo}/>
+                            <img className={'logo-img'} src={logo} alt={"home"}/>
                         </a>
                     </div>
                     <div className="return-back" onClick={updateMenu}>
@@ -25,7 +29,7 @@ export const OpenMenu = ({menu_status,updateMenu}) => {
                     <div className="open-menu-option">Доставка</div>
                     <div className="open-menu-option">Оплата</div>
                 </div>
-                <div className="button">Бронь столика</div>
+                <div className="button" onClick={updateAndReserve}>Бронь столика</div>
                 <div className="social-networks">
                     <div className="media-item">
                         <a href="https://www.instagram.com/karinast.is/" target={'_blank'}>

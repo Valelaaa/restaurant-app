@@ -1,0 +1,132 @@
+@import "../../variables/css-variables.scss";
+
+.reserve {
+  position: absolute;
+  background-image: url("../../../public/images/main-background.png");
+  z-index: 3;
+  font-family: $primary-font;
+  color: $light-text;
+
+  .reserve-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .reserve-container-center {
+      display: flex;
+      flex-direction: column;
+      background-color: $secondary-background-color;
+      min-width: 400px;
+
+      .close {
+        cursor: pointer;
+        display: flex;
+        justify-content: end;
+        padding-top: 15px;
+        padding-right: 15px;
+
+        .close-icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo-icon {
+          width: 80px;
+          height: 46px;
+        }
+      }
+
+      h1 {
+        color: $light-text;
+
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 28px */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 40px 40px;
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .input {
+          height: 52px;
+          margin: 0 60px 30px 60px;
+          border: 1px $primary-background-color solid;
+          background-color: $secondary-background-color;
+          color: $light-text;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%; /* 22.4px */
+          box-sizing: border-box;
+          padding: 15px 0 15px 20px;
+          width: $input-width;
+
+        }
+
+        .input-row {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 40px;
+
+          .input {
+            margin-bottom: 0;
+            width: calc($input-width / 2 - 12px);
+
+            &:first-child {
+              margin-left: 60px;
+              margin-right: 24px;
+            }
+
+            &:last-child {
+              margin-left: 0;
+              margin-right: 60px;
+            }
+          }
+        }
+
+        .button-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .button {
+            margin-bottom: 60px;
+            display: inline-flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+.reserve-hidden {
+  top: -100vh;
+  transition: top 0.3s ease-in-out; /* Добавляем анимацию смещения */
+}
+
+.reserve-visible {
+  top: 0;
+  transition: top 0.3s ease-in-out; /* Добавляем анимацию смещения */
+}

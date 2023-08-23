@@ -13,7 +13,7 @@ window.onload = function () {
     map.addControl(L.mapquest.control());
 
 }
-export const Contacts = () => {
+export const Contacts = ({reserveMenu}) => {
     return (
         <div className={"content-item contacts"}>
             <div className="title">
@@ -94,7 +94,7 @@ export const Contacts = () => {
                             </div>
                         </div>
                         <div className="info-buttons">
-                            <div className="button">Бронь столика</div>
+                            <div className="button" onClick={reserveMenu}>Бронь столика</div>
                             <div className="button faq">Задать вопрос</div>
                         </div>
                     </div>
