@@ -20,3 +20,7 @@ ReRin Food is a one-stop solution that bridges the gap between restaurant manage
 **Hamburger menu:**
 
 <div align="center"><img width="960" alt="main" src="projectpics/hamburger_menu.png"></div> 
+
+**Reserve table:**
+<div align="center"><img width="960" alt="main" src="projectpics/reserve-menu.png"></div>
+
