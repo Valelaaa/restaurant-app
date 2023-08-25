@@ -1,14 +1,12 @@
 import {PersonalNav} from "../personal-nav/PersonalNav.jsx";
-import React from "react";
 import {Categories} from "../categories/categories.jsx";
-import {DishComponent} from "../dish/DishComponent.jsx"
+import React from "react";
 
-export const DishContent = () => {
+export const TopNav = () => {
     return (
-        <div className="dish-content">
+        <div className="top-nav">
             <PersonalNav/>
             <Categories/>
-            <DishComponent/>
         </div>
     )
 }

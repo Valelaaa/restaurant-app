@@ -27,3 +27,6 @@ ReRin Food is a one-stop solution that bridges the gap between restaurant manage
 **Dish page:**
 <div align="center"><img width="960" alt="main" src="projectpics/dish-page.png"></div>
 
+**Catalogue:**
+<div align="center"><img width="960" alt="main" src="projectpics/catalogue.png"></div>
+
