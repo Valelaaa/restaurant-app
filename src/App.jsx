@@ -15,15 +15,12 @@ const router = createBrowserRouter(
         },
         {
             path: "/menu",
-            element: <Dish/>,
-            children: [
-                {
-                    path: "dish",
-                    element: <Dish/>,
-                    basePath:"/"
-                }
-            ]
-        }
+            element: <Menu/>,
+        },
+        {
+        path:"/menu/dish",
+        element:<Dish/>
+    }
 ]
 )
 

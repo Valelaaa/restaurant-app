@@ -1,0 +1,11 @@
+.dish-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -100vh;
+  z-index: 1;
+
+  .nav {
+    margin-left: 120px;
+  }
+
+}

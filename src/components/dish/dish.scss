@@ -34,7 +34,7 @@
           line-height: 120%;
 
           &::after {
-            content: " ₽"
+            content: $currency;
           }
         }
 
