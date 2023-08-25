@@ -3,7 +3,7 @@
 .sidebar-container {
   position: relative;
   display: flex;
-
+  z-index: 2;
   .sidebar {
     margin: 0 0 0 0;
     width: 120px;

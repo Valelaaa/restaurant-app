@@ -2,6 +2,7 @@
 .sidebar-container {
   position: relative;
   display: flex;
+  z-index: 2;
 }
 .sidebar-container .sidebar {
   margin: 0 0 0 0;

@@ -32,7 +32,7 @@
           font-style: normal;
           font-weight: 700;
           line-height: 120%;
-
+          user-select: none;
           &::after {
             content: $currency;
           }
