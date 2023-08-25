@@ -1,5 +1,6 @@
 @import "../../variables/css-variables.scss";
 .footer {
+  user-select: none;
   margin-top:100px;
   width: 100%;
   background-color: $secondary-background-color;

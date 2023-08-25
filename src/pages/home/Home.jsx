@@ -5,19 +5,10 @@ import {SideBar} from "../../components/sidebar/Sidebar.jsx";
 import {BasicContent} from "../../components/basic-content/BasicContent.jsx"
 import {Footer} from "../../components/footer/Footer.jsx"
 import {Reserve} from "../../components/reserve/Reserve.jsx";
+import {useReservation} from "../../script/useReservation.js";
 
 export const Home = () => {
-    const [reservationStatus, setReservationStatus] = useState("reserve reserve-hidden");
-    const [isMenuClicked, setIsMenuClicked] = useState(false);
-    const reserveMenu = () => {
-        if (!isMenuClicked) {
-            setReservationStatus("reserve reserve-visible")
-            setIsMenuClicked(true)
-        } else {
-            setReservationStatus("reserve reserve-hidden")
-            setIsMenuClicked(false)
-        }
-    }
+    const {reservationStatus, reserveMenu} = useReservation();
     return (
         <div className={'section'}>
             <Reserve menuStatus={reservationStatus} updateMenu={reserveMenu}/>

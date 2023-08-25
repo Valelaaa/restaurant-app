@@ -1,0 +1,47 @@
+@import "../../variables/css-variables";
+.slider-container {
+  width: 22vw;
+
+  .images-slider {
+    .swiper-slide {
+      padding-top: 70%;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+
+  .images-slider-thumbs {
+    cursor: pointer;
+    margin-top: 24px;
+
+    .swiper-slide {
+      cursor: pointer;
+
+      &-thumb-active {
+        border-color: $secondary-button-color;
+      }
+    }
+
+    &-wrapper {
+      width: 100%;
+      padding-top: 65%;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+    }
+  }
+}

@@ -1,6 +1,7 @@
+@import url("https://fonts.cdnfonts.com/css/circe?styles=15451,81159,81160,81161");
 .section {
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
+  background-color: #eae8e1;
+  font-family: "Circe", sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;

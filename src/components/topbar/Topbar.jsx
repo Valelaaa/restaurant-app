@@ -1,6 +1,7 @@
 import './topbar.scss';
 import React, {useState} from "react";
 import {Reserve} from "../reserve/Reserve.jsx";
+import {Link} from "react-router-dom";
 
 export const Topbar = ({updateMenu}) => {
 
@@ -8,9 +9,9 @@ export const Topbar = ({updateMenu}) => {
             <div className={'top-bar'}>
                 <div className={"list"}>
                     <ul className="menu">
-                        <a href="/menu">
+                        <Link to="/menu">
                             <li className="menu-item"><p className={'item-text'}>Меню</p></li>
-                        </a>
+                        </Link>
                         <a href="/delivery">
                             <li className="menu-item"><p className={'item-text'}>Доставка</p></li>
                         </a>

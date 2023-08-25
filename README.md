@@ -24,3 +24,6 @@ ReRin Food is a one-stop solution that bridges the gap between restaurant manage
 **Reserve table:**
 <div align="center"><img width="960" alt="main" src="projectpics/reserve-menu.png"></div>
 
+**Dish page:**
+<div align="center"><img width="960" alt="main" src="projectpics/dish-page.png"></div>
+

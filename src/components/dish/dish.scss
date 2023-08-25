@@ -1,0 +1,201 @@
+@import "../../variables/css-variables.scss";
+
+.dish {
+  .dish-container {
+    display: flex;
+    padding-left: 22vw;
+    margin-top: 60px;
+
+    .dish-photos {
+      margin-right: 7vw;
+
+    }
+
+    .dish-info {
+      width: 18vw;
+
+      .dish-name {
+        color: $dark-text;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+      }
+
+      .price-weight {
+        display: flex;
+        align-items: center;
+
+        .price {
+          color: $dark-text;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+
+          &::after {
+            content: " ₽"
+          }
+        }
+
+        .weight {
+          color: $dark-text;
+          opacity: 0.6;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 22.4px */
+
+          &::before {
+            margin-left: 10px;
+            margin-right: 10px;
+            content: "\\ ";
+          }
+
+          &::after {
+            content: " грамм"
+          }
+        }
+      }
+
+      .in-cart {
+        margin-top: 30px;
+
+        p {
+          margin-bottom: 25px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 22.4px */
+        }
+
+        form {
+          display: flex;
+
+          .count {
+            display: inline-flex;
+            padding: 15px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-right: 20px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            width: 90px;
+            border-radius: 1px;
+            border-color: rgba(0, 0, 0, 0.2);
+
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              appearance: none;
+              margin: 0;
+              margin-top: 2px;
+              width: 11px;
+              height: 23px;
+              background-size: cover;
+              cursor: pointer;
+            }
+
+            &::-webkit-inner-spin-button {
+              background-image: url('/public/images/arrors.png');
+
+              &:hover {
+                background-image: url('/public/images/arrors.png');
+              }
+            }
+
+          }
+
+          .button {
+            width: fit-content;
+            display: inline-flex;
+            padding: 15px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 1.6px;
+
+            background-color: $primary-button-hover-color;
+            color: $light-text;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+
+            &:hover {
+              background-color: #D5BDA3;
+            }
+          }
+        }
+      }
+
+      .ingredients-container {
+        p {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+        }
+
+        .ingredients {
+          margin-top: 30px;
+
+          .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+
+            .ingredient-actions {
+              .checkbox {
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+                border: 1px solid rgba(51, 51, 51, 0.20);
+                border-radius: 0;
+                accent-color: $primary-button-hover-color;
+              }
+            }
+          }
+
+          .ingredient {
+            .ingredient-name {
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 140%;
+              opacity: 0.5;
+            }
+
+            .ingredient-price {
+              margin-top: 10px;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 140%;
+
+              &::after {
+                content: " ₽";
+              }
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+
+      hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        opacity: 0.2;
+        height: 3px;
+        width: 100%;
+        background-color: #333333;
+      }
+    }
+  }
+}
+
