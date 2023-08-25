@@ -5,7 +5,6 @@ import React from "react";
 import {useReservation} from "../../script/useReservation.js";
 import {Reserve} from "../../components/reserve/Reserve.jsx";
 import {Contacts} from "../../components/contacts/Contacts.jsx";
-import {PersonalNav} from "../../components/personal-nav/PersonalNav.jsx";
 import {DishContent} from "../../components/dish-content/DishContent.jsx";
 
 export const Dish = () => {
@@ -18,7 +17,9 @@ export const Dish = () => {
                 <SideBar reserveMenu = {reserveMenu}/>
                 <DishContent/>
             </div>
-                {/*<Contacts reserveMenu={reserveMenu}/>*/}
+            <div className="content-item">
+                <Contacts reserveMenu={reserveMenu}/>
+            </div>
             <Footer/>
         </div>
     )

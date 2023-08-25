@@ -65,7 +65,6 @@ export const BasicContent = ({reserveMenu}) => {
                         <div className="buttons">
                                 <div className="button content-button">Подробнее</div>
                                 <div className="secondary-button content-button">Условия доставки</div>
-
                         </div>
                     </ContentItem>
                 </li>

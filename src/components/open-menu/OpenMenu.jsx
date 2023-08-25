@@ -5,6 +5,7 @@ import close from '../../../public/images/close.png';
 import youtube from '../../../public/images/youtube-logo.png';
 import telegram from '../../../public/images/telegram-logo.png';
 import vk from "../../../public/images/vk-logo.png";
+import {Link} from "react-router-dom";
 
 export const OpenMenu = ({menu_status,updateMenu,reserveMenu}) => {
     function updateAndReserve(){
@@ -16,9 +17,9 @@ export const OpenMenu = ({menu_status,updateMenu,reserveMenu}) => {
             <div className="open-menu-container">
                 <div className="open-menu-pics">
                     <div className="open-menu-logo">
-                        <a href="/home">
+                        <Link to={"/"} >
                             <img className={'logo-img'} src={logo} alt={"home"}/>
-                        </a>
+                        </Link>
                     </div>
                     <div className="return-back" onClick={updateMenu}>
                         <img className={'close-img'} src={close} alt="close menu"/>

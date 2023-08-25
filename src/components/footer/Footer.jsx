@@ -2,14 +2,15 @@ import './footer.scss'
 import logo from '../../../public/images/logo.png'
 import visa from '../../../public/images/visa.png'
 import mastercard from '../../../public/images/mastercard.png'
+import {Link} from "react-router-dom";
 export const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-container">
                 <div className="logo">
-                    <a href="/home">
+                    <Link to={"/"} >
                         <img src={logo} alt="" className="logo-img"/>
-                    </a>
+                    </Link>
                 </div>
                 <a href="/politics">
                     <div className="footer-text">Политика конфиденциальности</div>

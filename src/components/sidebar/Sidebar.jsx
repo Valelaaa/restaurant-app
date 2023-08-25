@@ -6,6 +6,7 @@ import youtube from '../../../public/images/youtube-logo.png'
 import vk from '../../../public/images/vk-logo.png'
 import telegram from '../../../public/images/telegram-logo.png'
 import {OpenMenu} from "../open-menu/OpenMenu.jsx";
+import {Link} from "react-router-dom";
 export const SideBar = ({reserveMenu}) => {
     const [menuClass, setMenuClass] = useState("open-menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
@@ -28,9 +29,9 @@ export const SideBar = ({reserveMenu}) => {
 
                 <div className="upper-side">
                     <div className="logo">
-                        <a href="/home">
+                        <Link to={"/"}>
                             <img className={'logo-img'} src={logo}/>
-                        </a>
+                        </Link>
                     </div>
                     <div className="menu-left">
                         <div className="vector-container" onClick={updateMenu}>

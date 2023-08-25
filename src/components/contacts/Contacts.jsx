@@ -1,19 +1,21 @@
 import '../content-item/content-item.scss'
+import '../basic-content/basic-content.scss'
 import '../contacts/contacts.scss'
+import {useEffect} from "react";
 
-window.onload = function () {
-    L.mapquest.key = '7fVMwrkCK2acTGcibTBjuSAgzzVwnN5b'
-    let map = L.mapquest.map('map', {
-        center: [47.02416, 28.826634],
-        layers: L.mapquest.tileLayer('light'),
-        zoom: 18
-    });
-    const marker = L.marker([47.02416, 28.826634]).addTo(map)
-    marker.bindPopup('We are Here');
-    map.addControl(L.mapquest.control());
-
-}
 export const Contacts = ({reserveMenu}) => {
+    useEffect(() => {
+        // Инициализация карты здесь
+        L.mapquest.key = '7fVMwrkCK2acTGcibTBjuSAgzzVwnN5b'
+        let map = L.mapquest.map('map', {
+            center: [47.02416, 28.826634],
+            layers: L.mapquest.tileLayer('light'),
+            zoom: 18
+        });
+        const marker = L.marker([47.02416, 28.826634]).addTo(map)
+        marker.bindPopup('We are Here');
+        map.addControl(L.mapquest.control());
+    }, []);
     return (
         <div className={"content-item contacts"}>
             <div className="title">

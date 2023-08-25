@@ -1,26 +1,36 @@
 import './App.scss'
 import {Home} from "./pages/home/Home.jsx";
 import React from "react";
-import {BrowserRouter as Router, createBrowserRouter, Route, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Menu} from "./pages/menu/Menu.jsx"
 import {Dish} from "./pages/dish/Dish.jsx";
-
 
 const router = createBrowserRouter(
     [
         {
             path: "/",
-            element: <Home/>
+            element: <Home/>,
+            basePath: "/",
+
         },
         {
-            path: "/dish",
-            element:<Dish/>
-        },
-    ]
+            path: "/menu",
+            element: <Dish/>,
+            children: [
+                {
+                    path: "dish",
+                    element: <Dish/>,
+                    basePath:"/"
+                }
+            ]
+        }
+]
 )
+
 function App() {
 
     return (
-       <RouterProvider router={router}/>
+        <RouterProvider router={router}/>
     )
 }
 
