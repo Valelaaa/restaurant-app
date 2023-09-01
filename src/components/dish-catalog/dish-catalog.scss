@@ -1,0 +1,13 @@
+
+.dish-catalog {
+  .catalog {
+    margin-left: 14vw;
+    margin-top: 50px;
+    width: 68vw;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+

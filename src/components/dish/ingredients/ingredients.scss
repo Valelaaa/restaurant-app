@@ -1,0 +1,55 @@
+@import "../../../variables/css-variables.scss";
+.ingredients-container {
+  p {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .ingredients {
+    margin-top: 30px;
+
+    .checkbox-container {
+      display: flex;
+      justify-content: space-between;
+
+      .ingredient-actions {
+        .checkbox {
+          cursor: pointer;
+          width: 24px;
+          height: 24px;
+          border: 1px solid rgba(51, 51, 51, 0.20);
+          border-radius: 0;
+          accent-color: $primary-button-hover-color;
+        }
+      }
+    }
+
+    .ingredient {
+      .ingredient-name {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        opacity: 0.5;
+      }
+
+      .ingredient-price {
+        margin-top: 10px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+
+        &::after {
+          content: $currency;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

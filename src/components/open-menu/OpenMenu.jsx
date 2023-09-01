@@ -7,17 +7,18 @@ import telegram from '../../../public/images/telegram-logo.png';
 import vk from "../../../public/images/vk-logo.png";
 import {Link} from "react-router-dom";
 
-export const OpenMenu = ({menu_status,updateMenu,reserveMenu}) => {
-    function updateAndReserve(){
+export const OpenMenu = ({menu_status, updateMenu, reserveMenu}) => {
+    function updateAndReserve() {
         updateMenu();
         reserveMenu();
     }
+
     return (
         <div className={menu_status}>
             <div className="open-menu-container">
                 <div className="open-menu-pics">
                     <div className="open-menu-logo">
-                        <Link to={"/"} >
+                        <Link to={"/"} onClick={updateMenu}>
                             <img className={'logo-img'} src={logo} alt={"home"}/>
                         </Link>
                     </div>
@@ -26,7 +27,9 @@ export const OpenMenu = ({menu_status,updateMenu,reserveMenu}) => {
                     </div>
                 </div>
                 <div className="open-menu-options">
-                    <div className="open-menu-option">Меню</div>
+                    <Link to={"/menu"} onClick={updateMenu} >
+                        <div className="open-menu-option">Меню</div>
+                    </Link>
                     <div className="open-menu-option">Доставка</div>
                     <div className="open-menu-option">Оплата</div>
                 </div>

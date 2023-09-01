@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import './home.scss'
 import {TopContent} from "../../components/topContent/TopContent.jsx";
 import {SideBar} from "../../components/sidebar/Sidebar.jsx";
 import {BasicContent} from "../../components/basic-content/BasicContent.jsx"
