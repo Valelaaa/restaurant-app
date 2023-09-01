@@ -9,7 +9,7 @@ export const TopContent = ({reserveMenu}) => {
             <Topbar updateMenu={reserveMenu}/>
             <div className={"top-text"}>
                 <p className={'text'}>
-                    Видовой ресторан ReRin Food
+                    Видовой ресторан L'Étoile Dorée
                     <br/>
                     в Центре Кишинева
                 </p>

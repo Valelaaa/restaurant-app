@@ -1,5 +1,5 @@
 import './dish.scss'
-import Ingredient from "./Ingredient.js";
+import Ingredient from "./ingredients/Ingredient.js";
 import Dish from "./Dish.js";
 import {ImageSlider} from "../image-slider/ImageSlider.jsx";
 import {useState} from "react";

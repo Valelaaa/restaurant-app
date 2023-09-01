@@ -1,9 +1,7 @@
-@import '../../variables/css-variables.scss';
+@import "../../variables/css-variables.scss";
 
-.section{
-  //colors
+.page-section {
   background-color: $primary-background-color;
-  //font-family: "Roboto", sans-serif;
   font-family: $primary-font;
   font-weight: $mid-width;
 
@@ -18,14 +16,18 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
 
-  .horizontal-section {
-    //sizes
+  .page-horizontal-section {
+    height: fit-content;
     width: 100%;
-    height: calc(100vh);
+    //height: calc(100vh);
 
     //positions
-    position:relative;
+    position: relative;
     display: flex;
-  }
 
+    .page-container {
+      height: fit-content;
+    }
+  }
 }
+
