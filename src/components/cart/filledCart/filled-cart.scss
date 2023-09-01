@@ -1,13 +1,9 @@
 @import "../../../variables/css-variables.scss";
-@import "../../dish/ingredients/ingredients.scss";
 
 .filled-cart {
-  margin-top: -100vh;
-  z-index: 0;
-
   .filled-cart-container {
-    margin-left: 270px;
-    margin-top: 126px;
+    margin-left: 8vw;
+    margin-top: 15px;
 
     .cart-title {
       font-size: 40px;
@@ -26,7 +22,7 @@
       width: 100%;
 
       .product-container-top {
-        width: 67%;
+        width: 80%;
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
@@ -59,7 +55,7 @@
 
       .products {
         display: flex;
-        width: 67%;
+        width: 80%;
 
         .product-list {
           display: flex;
@@ -182,6 +178,7 @@
                         height: 27px;
                         .ingredient-price {
                           margin-top: 0;
+                          opacity: 0.75;
                           font-size: 20px;
                           font-style: normal;
                           font-weight: 400;
@@ -238,7 +235,7 @@
       flex-direction: column;
       border: #B59571 1px dashed;
       box-sizing: border-box;
-      margin-left: -32%;
+      margin-left: -15%;
       width: 30%;
       border-radius: 5px;
 

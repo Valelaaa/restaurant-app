@@ -8,17 +8,17 @@ import {Contacts} from "../../components/contacts/Contacts.jsx";
 import {Footer} from "../../components/footer/Footer.jsx";
 import {EmptyCard} from "../../components/cart/empty-cart/EmptyCard.jsx";
 import {FilledCart} from "../../components/cart/filledCart/FilledCart.jsx";
-
+import "../page/page.scss"
 
 export const Cart = () => {
     const {reservationStatus, reserveMenu} = useReservation();
     const location = useLocation();
     return (
-        <div className="section">
+        <div className="page-section">
             <Reserve menuStatus={reservationStatus} updateMenu={reserveMenu}/>
-            <div className="horizontal-section">
+            <div className="page-horizontal-section">
                 <SideBar reserveMenu={reserveMenu}/>
-                <div className="container">
+                <div className="page-container">
                     <PersonalNav/>
 
                     <div className="breadcrumbs">
@@ -31,9 +31,11 @@ export const Cart = () => {
                             Корзина
                         </Link>
                     </div>
+
+                    <FilledCart/>
+
                 </div>
             </div>
-            <FilledCart/>
 
             <div className="content-item">
                 <Contacts reserveMenu={reserveMenu}/>

@@ -38,7 +38,7 @@ const dish2 = new Dish(3, "Яичница-глазунья из трех яиц"
 const deliveryPriceBackend = 50;
 export const FilledCart = () => {
     let dishes = []
-    for (let i = 0; i < 100; i ++){
+    for (let i = 0; i < 20; i ++){
         dishes.push( new Dish(i, "Яичница-глазунья из трех яиц", "50",
             "400", [new Ingredient(1, "Тигровые креветки 60 г", 450),
                 new Ingredient(2, "Томаты / паприка", 80),

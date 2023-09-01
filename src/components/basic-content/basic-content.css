@@ -30,7 +30,7 @@
   border-radius: 5%;
   flex-grow: 1;
   height: 3px;
-  background-color: #897148;
+  background-color: #B59571;
 }
 .container .content-list .content-item .menu-container .menu-item .image-container .rectangle {
   display: flex;
@@ -57,6 +57,7 @@
   gap: 30px;
 }
 .container .content-list .content-item .buttons .content-button {
+  user-select: none;
   letter-spacing: 2px;
   display: flex;
   align-items: center;
