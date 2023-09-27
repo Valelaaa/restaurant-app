@@ -1,4 +1,4 @@
-<H1> ReRin Food: A Modern Restaurant Web Application Powered by React.js</H1>
+<H1>A Modern Restaurant Web Application Powered by React.js</H1>
 <div align="center"><img width="960" alt="main" src="projectpics/main_page.png"></div>
 
 **ReRin Food** is a dynamic web application tailored for restaurants, developed using **React.js**, **JavaScript**, and **SCSS**. This application offers a seamless user experience with both vertical and horizontal navigation options.
